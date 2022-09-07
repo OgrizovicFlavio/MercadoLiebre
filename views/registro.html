@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Mercado Liebre | Registro </title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/958ac6c0b6.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/css/registro.css">
+</head>
+
+<body>
+    <header>
+        <div class="contenedor-bienvenida">
+            <div class="contenedor-logo">
+                <img class="logo" src="/images/logo-mercado-liebre.svg" alt="Logo">
+            </div>
+
+            <div class="contenedor-buscador"><input class="barra-busqueda" type="text" id="busqueda" name="busqueda"
+                    placeholder="   Buscar productos, marcas">
+                <button class="buscador"><i class="icono-busqueda fas fa-search"></i></button>
+            </div>
+
+            <div class="contenedor-mensaje">
+                <p class="mensaje-bienvenida"><i class="fas fa-hand-holding-usd"></i> Comprá en cuotas y sin tarjeta de
+                    crédito</p>
+            </div>
+        </div>
+        <div class="contenedor-navegacion">
+            <nav class="navegacion-1">
+                <a href="" class="hipervinculo">
+                    Ofertas
+                </a>
+                <a href="" class="hipervinculo">
+                    Tiendas Oficiales
+                </a>
+                <a href="" class="hipervinculo">
+                    Vender
+                </a>
+                <a href="" class="hipervinculo">
+                    Ayuda
+                </a>
+            </nav>
+            <nav class="navegacion-2">
+                <a href="" class="hipervinculo">
+                    Creá tu cuenta <i class="far fa-id-card"></i>
+                </a>
+                <a href="" class="hipervinculo">
+                    Ingresá <i class="fas fa-sign-in-alt"></i>
+                </a>
+                <a href="" class="hipervinculo">
+                    Mis Compras <i class="fas fa-shopping-basket"></i>
+                </a>
+            </nav>
+        </div>
+        <div class="contenedor-menu">
+            <i class="icono-menu fas fa-bars burger-menu"></i>
+        </div>
+    </header>
+    <main class="contenedor-formulario">
+        <form action="/registro" method="POST" class="formulario">
+            <div class="div-label">
+                <label for="nombre completo" name="registro" class="label-form"></label>
+                <input type="text" required="required" placeholder=" Nombre y apellido" class="input-formulario">
+            </div>
+            <div class="div-label">
+                <label for="user" name="registro" class="label-form"></label>
+                <input type="text" required="required" placeholder=" Nombre de usuario" minlength="8"
+                    class="input-formulario">
+            </div>
+
+            <div class="div-label">
+                <label for="fechadenac" name="registro" class="label-form"></label>
+                <input type="date" required="required" class="input-formulario">
+            </div>
+            <div class="div-label">
+                <label for="user" name="registro" class="label-form"></label>
+                <input type="email" name="email" placeholder=" Ingresá tu email" class="input-formulario">
+            </div>
+            <div class="div-label">
+                <label for="domicilio" name="registro" class="label-form"></label>
+                <input type="text" required="required" placeholder=" Ingresá tu domicilio" class="input-formulario">
+            </div>
+            <div class="div-label">
+                <label for="perfil" name="registro" class="label-form">Perfil de usuario</label>
+                <select name="registro" class="label-form">
+                    <option class="label-form"> Voy a comprar</option>
+                    <option class="label-form"> Voy a vender</option>
+                </select>
+            </div>
+            <div class="div-label">
+                <label for="catgorias" name="registro" class="label-form"><p class="titulo-cat">Categorías de interés</p></label>
+                <div class="div-categorias-interes">
+                    <div class="input-categoria"><input type="checkbox" required="required" name="categorias"
+                            class="input-formulario"> <p class="cat">Electro</p> </div>
+                    <div class="input-categoria"><input type="checkbox" required="required" name="categorias"
+                            class="input-formulario"> <p class="cat">Moda</p> </div>
+                    <div class="input-categoria"><input type="checkbox" required="required" name="categorias"
+                            class="input-formulario"> <p class="cat">Hogar</p> </div>
+                    <div class="input-categoria"><input type="checkbox" required="required" name="categorias"
+                            class="input-formulario"> <p class="cat">Juguetería</p> </div>
+                    <div class="input-categoria"><input type="checkbox" required="required" name="categorias"
+                            class="input-formulario"> <p class="cat">Vida sana</p> </div>
+                </div>
+            </div>
+            <div class="div-label">
+                <label for="pass" name="registro" class="label-form"></label>
+                <input type="password" required="required" placeholder=" Ingresá tu contraseña"
+                    class="input-formulario">
+            </div>
+            <div class="div-label">
+                <label for="pass" name="registro" class="label-form"></label>
+                <input type="password" required="required" placeholder=" Repetí tu contraseña" class="input-formulario">
+            </div>
+            <div class="div-label">
+                <button type="reset" class="boton-enviar"><p class="cat">Borrar</p></button>
+                <button type="submit" class="boton-enviar"><p class="cat">Enviar</p></button>
+            </div>
+
+
+        </form>
+    </main>
+    <footer>
+        <div class="contenedor-icono-footer">
+            <i class="icono-footer fas fa-credit-card"></i>
+            <h2>Pagá con tarjeta o en efectivo</h2>
+            <p>Con MercadoLiebreCash tenés cuotas sin interés con tarjeta o efectivo en puntos de pago. ¡Y siempre es
+                seguro!</p>
+        </div>
+        <div class="contenedor-icono-footer">
+            <i class="icono-footer fas fa-gift"></i>
+            <h2>Envío gratis desde los $2.500</h2>
+            <p>Solo por estar registrado en Mercado Liebre tenés envíos gratis en miles de productos. Es un beneficio de
+                Mercado Puntos.</p>
+        </div>
+        <div class="contenedor-icono-footer">
+            <i class="icono-footer fas fa-user-shield"></i>
+            <h2>Seguridad de principio a fin</h2>
+            <p>¿No te gusta? ¡Devolvelo! En MercadoLiebre no hay nada que no puedas hacer porque estás siempre protegid@
+            </p>
+        </div>
+    </footer>
+    <h4 class="copyright">Copyright © 1999-2020 MercadoLiebre S.R.L.</h4>
+</body>
+
+</html>

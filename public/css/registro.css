@@ -1,0 +1,263 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+}
+
+/* HEADER */
+
+header {
+    background-color: #EAC926;
+    width: 100%;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.contenedor-bienvenida {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+    margin-bottom: 20px;
+    padding-top: 20px;
+}
+
+.contenedor-logo {
+    width: 50%;
+}
+
+.logo {
+    width: 100%;
+}
+
+.contenedor-buscador {
+    width: 50%;
+    display: flex;
+}
+
+.buscador {
+    margin-left: 1%;
+    align-self: center;
+}
+
+.barra-busqueda {
+    width: 100%;
+    align-self: center;
+}
+
+.mensaje-bienvenida {
+    font-size: 16px;
+    text-align: center;
+    margin: auto;
+}
+
+.contenedor-menu {
+    text-align: center;
+}
+
+.icono-menu {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 10px;
+    color: white;
+    background-color: #1259c3;
+    display: inline-block;
+    border-radius: 2px;
+}
+
+.navegacion-1 {
+    display: none;
+}
+
+.navegacion-2 {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+/* FORMULARIO */
+
+.contenedor-formulario {
+    box-sizing: border-box;
+    background-color: #ebebeb;
+    display: flex;
+    padding-bottom: 25px;
+    width: 100%;
+}
+
+.formulario {
+    display:flex;
+    flex-direction: column;
+    padding-left: 1.5vw;
+    padding-top: 1.5vw;
+    width: 100%
+}
+
+.label-form {
+    font-size: 1.5em;
+}
+
+.div-label {
+    margin-top: 0.5vw;
+    margin-bottom: 0.5vw;
+}
+
+.input-formulario {
+    font-size: 1.5em;
+}
+
+.boton-enviar {
+    font-size: 2em;
+    border-radius: 5px;
+    border: #1259c3 1px solid;
+    color: white;
+    background-color: #1259c3;
+    width: 25%;
+    padding: 5px;
+}
+
+.cat {
+    font-size: 16px;
+    display: inline-block;
+}
+
+.titulo-cat {
+    font-weight: bold;
+
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+}
+
+.icono-footer {
+    font-size: 2em;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    color: #1259c3;
+}
+
+h4 {
+    margin-top: 5px;
+}
+
+.copyright {
+    margin-top: 30px;
+    margin-left: 5%;
+    margin-bottom: 10px;
+}
+
+
+/* VISTA TABLET */
+
+@media (min-width: 768px) {
+
+    .descripcion {
+        display: initial;
+    }
+
+    .producto {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 45%;
+    }
+
+    .contenedor-navegacion {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .navegacion-1 {
+        display: initial;
+    }
+
+    .navegacion-2 {
+        display: initial;
+    }
+
+    .hipervinculo {
+        margin-left: 5px;
+        margin-right: 5px;
+        font-size: 14px;
+    }
+
+    .contenedor-menu {
+        display: none;
+    }
+
+    .contenedor-logo {
+        width: 30%;
+    }
+
+    .contenedor-buscador {
+        width: 30%;
+        display:flex;
+    }
+
+    .contenedor-mensaje {
+        display:flex;
+        width: 30%;
+    }
+
+    .mensaje-bienvenida {
+        align-self: center;
+    }
+}
+
+.formulario {
+    display:flex;
+    flex-direction: column;
+    padding-left: 1.5vw;
+    padding-top: 1.5vw;
+    width: 25%;
+}
+
+
+
+/* VISTA ESCRITORIO */
+
+@media (min-width: 1024px) {
+
+    .producto {
+        box-shadow: 0px 0px 10px rgb(100, 100, 100);
+        width: 20%;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: row;
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .icono-footer {
+        font-size: 3em;
+        color: #1259c3;
+        margin: 15px 0 10px 0;
+        transition: color 0s;
+    }
+
+    .icono-footer:hover{
+        color: rgb(233, 219, 20)
+    }
+
+    .contenedor-icono-footer{
+        width: 20%;;
+        margin-left: 8vw;
+        margin-top: 25px;
+    }
+
+}
